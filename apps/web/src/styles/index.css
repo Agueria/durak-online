@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white font-sans;
+  }
+}
+
+@layer components {
+  .card {
+    @apply relative w-16 h-24 bg-white rounded-lg border-2 border-gray-300 shadow-md cursor-pointer transition-all duration-200;
+  }
+  
+  .card:hover {
+    @apply transform -translate-y-2 shadow-lg;
+  }
+  
+  .card.selected {
+    @apply border-blue-500 transform -translate-y-2;
+  }
+  
+  .card.disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+  
+  .card.disabled:hover {
+    @apply transform-none shadow-md;
+  }
+  
+  .card-suit {
+    @apply absolute top-1 left-1 text-xs font-bold;
+  }
+  
+  .card-rank {
+    @apply absolute bottom-1 right-1 text-xs font-bold;
+  }
+  
+  .card-center {
+    @apply absolute inset-0 flex items-center justify-center text-lg font-card font-bold;
+  }
+  
+  .suit-red {
+    @apply text-card-red;
+  }
+  
+  .suit-black {
+    @apply text-card-black;
+  }
+  
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-600 hover:bg-gray-700 text-white focus:ring-gray-500;
+  }
+  
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-700 text-white focus:ring-red-500;
+  }
+  
+  .btn-success {
+    @apply bg-green-600 hover:bg-green-700 text-white focus:ring-green-500;
+  }
+  
+  .btn:disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+  
+  .btn:disabled:hover {
+    @apply bg-current;
+  }
+  
+  .table-surface {
+    @apply bg-table-green rounded-xl p-6 shadow-inner;
+  }
+  
+  .trump-badge {
+    @apply bg-trump text-black px-3 py-1 rounded-full font-bold text-sm;
+  }
+  
+  .toast {
+    @apply fixed top-4 right-4 bg-red-600 text-white px-4 py-2 rounded-lg shadow-lg z-50;
+  }
+  
+  .toast.success {
+    @apply bg-green-600;
+  }
+  
+  .toast.info {
+    @apply bg-blue-600;
+  }
+}
