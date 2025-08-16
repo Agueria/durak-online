@@ -53,7 +53,7 @@ durak-online/
 ### Quick Start
 ```bash
 # Clone repository
-git clone <repo-url>
+git clone [<repo-url>](https://github.com/Agueria/durak-online)
 cd durak-online
 
 # Install dependencies
@@ -212,7 +212,7 @@ docker run -p 3001:3001 durak-server
 
 ## 📄 License
 
-MIT License - See [LICENSE](LICENSE) file for details.
+Apache 2.0
 
 ## 🎉 Acknowledgments
 
@@ -277,7 +277,7 @@ durak-online/
 ### Hızlı Başlangıç
 ```bash
 # Depoyu klonla
-git clone <repo-url>
+git clone [<repo-url>](https://github.com/Agueria/durak-online)
 cd durak-online
 
 # Bağımlılıkları yükle
@@ -436,7 +436,7 @@ docker run -p 3001:3001 durak-server
 
 ## 📄 Lisans
 
-MIT License - Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+Apache 2.0
 
 ## 🎉 Teşekkürler
 
